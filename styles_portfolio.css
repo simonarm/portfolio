@@ -1,9 +1,14 @@
 section {
   height: 100vh;
+  width: 100vw;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
 }
 
 main {
@@ -32,4 +37,25 @@ nav {
 .sticky {
   position: fixed;
   top: 0;
+}
+
+#home {
+  position: relative;
+  background-image: url("assets/beach-2213618.jpg");
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  place-items: center;
+  justify-content: space-around;
+}
+
+.credits {
+  position: absolute;
+  bottom: 1em;
+  right: 2em;
+}
+
+credits a {
+  color: #99a;
 }
