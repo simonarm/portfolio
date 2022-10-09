@@ -1,6 +1,26 @@
+:root {
+  --color-main-dark: #dae3ec;
+  --color-mid-dark: #9ea3a9;
+  --color-main-dark: #dae3ec;
+}
+
+* {
+  color: var(--color-main-dark);
+}
 section {
   height: 100vh;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-mid-dark);
+}
+
+nav a {
+  text-decoration: none;
+}
+
+#home h1 {
+  color: blue;
 }
 
 html {
@@ -56,6 +76,6 @@ nav {
   right: 2em;
 }
 
-credits a {
+.credits a {
   color: #99a;
 }
