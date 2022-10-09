@@ -6,7 +6,8 @@
 </head>
 <body>
   <main>
-    <nav>
+    <div id="reference"></div>
+    <nav id="main-nav">
       <a href="#home"><span>Home</span></a>
       <a href="#profile"><span>Profile</span></a>
       <a href="#cv"><span>CV</span></a>
@@ -30,4 +31,20 @@
       <h1>Contact</h1>
     </section>
   </main>
+
+  <script>
+    window.addEventListener("scroll", () => {
+      addStickyClasses();
+    });
+
+    function addStickyClasses() {
+      let nav = document.getElementById("main-nav");
+      let reference = document.getElementById("reference");
+      if (window.scrollY > reference.offsetTop) {
+        nav.classList.add("sticky");
+      } else {
+        nav.classList.remove("sticky");
+      }
+    }
+  </script>
 </body>
