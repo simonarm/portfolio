@@ -3,6 +3,10 @@
   <link rel="stylesheet" href="styles_portfolio.css" />
   <meta charset="UTF-8" />
   <meta content="width=device-width, initial-scale=1" , name="viewport" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
   <main>
@@ -16,7 +20,7 @@
     </nav>
 
     <section id="home">
-      <h1>Home</h1>
+      <h1 class="animate__animated animate__bounce">Portfolio Simon Arm</h1>
       <div class="credits">
         <a href="https://pixabay.com/de/users/publicco-5009832/"
           >© Image by PubliCo</a
@@ -47,6 +51,8 @@
       let reference = document.getElementById("reference");
       if (window.scrollY > reference.offsetTop) {
         nav.classList.add("sticky");
+      } else {
+        nav.classList.remove("sticky");
       }
     }
   </script>
