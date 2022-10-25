@@ -1,5 +1,5 @@
 :root {
-  --color-main-dark: #dae3ec;
+  --color-main-dark: #2e95b0;
   --color-mid-dark: #9ea3a9;
   --color-main-dark: #dae3ec;
 }
@@ -21,7 +21,7 @@ section h1 {
   left: 0;
 }
 
-nav a {
+#main-nav a {
   text-decoration: none;
 }
 
@@ -45,7 +45,8 @@ main {
   flex-direction: column;
 }
 
-nav {
+#main-nav {
+  display: none;
   font-family: "Courier New", Courier, monospace;
   font-size: large;
   position: absolute;
@@ -54,11 +55,35 @@ nav {
   left: 0;
   top: 0;
   z-index: 1;
-  display: flex;
-  width: 100%;
+  width: 85vw;
   height: 10vh;
   gap: 4em;
+}
 
+#mobile-nav {
+  position: fixed;
+  z-index: 5;
+  display: flex;
+  bottom: 0;
+  flex-direction: column;
+  gap: 1.5em;
+  height: 64px;
+  width: 64px;
+  background-color: red;
+}
+
+#mobile-nav a {
+  position: absolute;
+  padding-bottom: 5rem;
+  width: 0;
+  overflow: hidden;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 12px;
+  transition: width 0.2s linear;
 }
 
 #reference {
@@ -73,7 +98,7 @@ nav {
 
 #home {
   position: relative;
-  background-image: url("assets/george-washington-bridge-gb201a7068_1920.jpg");
+  background-image: url("assets/map-of-the-world-g0186a1176_1920.jpg");
   background-repeat: none;
   background-size: cover;
   background-position: center;
@@ -89,6 +114,19 @@ nav {
 }
 
 .credits a {
-  color: #99a;
+  color: #2e95b0;
 }
 
+#profile::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -1em;
+  right: 0;
+  left: 0;
+  bottom: 90%;
+  background: var(--color-main-dark);
+  filter: blur(20px);
+  opacity: 1;
+  transform: scaleY(1.4);
+}
