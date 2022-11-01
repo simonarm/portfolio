@@ -18,20 +18,13 @@
       <a href="#portfolio"><span>Portfolio</span></a>
       <a href="#contact"><span>Contact</span></a>
     </nav>
-    <nav id="mobile-nav">
-      <a href="#home" class="mobile-nav-option"><span>Home</span></a>
-      <a href="#profile" class="mobile-nav-option"><span>Profile</span></a>
-      <a href="#cv" class="mobile-nav-option"><span>CV</span></a>
-      <a href="#portfolio" class="mobile-nav-option"><span>Portfolio</span></a>
-      <a href="#contact" class="mobile-nav-option"><span>Contact</span></a>
-    </nav>
 
     <section id="home">
       <h1 class="animate__animated animate__bounce">Portfolio Simon Arm</h1>
       <div class="credits">
         <a
-          href="https://pixabay.com/de/photos/sternenklarer-himmel-nachthimmel-2675322/"
-          >© Image by Felix Mittermeier</a
+          href="https://pixabay.com/de/illustrations/w%c3%bcrfel-geometrie-abstrakt-objekte-3381438/"
+          >© Image by Piro4D</a
         >
       </div>
     </section>
@@ -63,25 +56,5 @@
         nav.classList.remove("sticky");
       }
     }
-
-    document.getElementById("mobile-nav").addEventListener("click", expandNav);
-
-    function expandNav() {
-      let navElements = document.getElementsByClassName("mobile-nav-option");
-      let position = 0;
-      let zIndex = -1;
-      let redValue = 200;
-      for (let element of navElements) {
-        element.style.bottom = "${position}rem";
-        element.style.zIndex = "${zIndex}";
-        element.style.background = "rgb(${redValue}, 70, 150)";
-        redValue -= 30;
-        position += 4.5;
-        zIndex--;
-      }
-    }
   </script>
 </body>
-
-await new Promise(r => setTimeout(r, 100)); element.style.width ?
-(element.style.width = null) : (element.style.width = "4rem");
