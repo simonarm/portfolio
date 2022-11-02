@@ -85,29 +85,30 @@
     </section>
     <section id="contact">
       <h1>Contact</h1>
+      <div class="Anfrage">
+        <h2>Anfrage senden</h2>
+        <p>Falls dir die Seite gefallen hat, schicke mir eine Anfrage ;)</p>
+        <p>Falls nicht kann ich dir auch nicht weiterhelfen.</p>
+
+        <!-- We will put our React component inside this div. -->
+        <div id="like_button_container"></div>
+
+        <!-- Load React. -->
+        <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+        <script
+          src="https://unpkg.com/react@18/umd/react.development.js"
+          crossorigin
+        ></script>
+        <script
+          src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+          crossorigin
+        ></script>
+
+        <!-- Load our React component. -->
+        <script src="portfolio.js"></script>
+      </div>
     </section>
   </main>
-
-  <h2>Add React in One Minute</h2>
-  <p>This page demonstrates using React with no build tooling.</p>
-  <p>React is loaded as a script tag.</p>
-
-  <!-- We will put our React component inside this div. -->
-  <div id="like_button_container"></div>
-
-  <!-- Load React. -->
-  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-  <script
-    src="https://unpkg.com/react@18/umd/react.development.js"
-    crossorigin
-  ></script>
-  <script
-    src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-    crossorigin
-  ></script>
-
-  <!-- Load our React component. -->
-  <script src="portfolio.js"></script>
 
   <script>
     window.addEventListener("scroll", () => {

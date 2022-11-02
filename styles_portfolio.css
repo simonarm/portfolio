@@ -138,3 +138,9 @@ nav button:hover {
   position: absolute;
   bottom: 2em;
 }
+
+.Anfrage {
+  position: absolute;
+  left: 2em;
+  bottom: 2em;
+}
