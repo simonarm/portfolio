@@ -109,6 +109,7 @@ nav button:hover {
   background-color: lightgray;
   color: var(--color-main-dark);
   text-align: center;
+  font-weight: bold;
 }
 
 .home_infos div {
