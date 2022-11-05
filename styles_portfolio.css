@@ -46,7 +46,7 @@ nav {
   justify-content: center;
   align-items: center;
   left: 0;
-  top: 0;
+  top: -2px;
   z-index: 1;
   display: flex;
   width: 100%;
@@ -86,38 +86,32 @@ nav button:hover {
 
 #home {
   position: relative;
-  background-image: url("assets/cubes-gcedf9711a_1920.jpg");
+  background-image: url("assets/space.jpg");
   background-repeat: none;
   background-size: cover;
   background-position: center;
-  display: flex;
-  place-items: center;
-  justify-content: space-around;
-}
-
-.home_infos {
-  margin: 2em;
-  max-width: 40em;
-  box-shadow: #c8943e 0px 0px 200px 30px, #c8943e 0px 0px 0px 5px;
-  border-radius: 10px;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 3.8em;
-  padding-bottom: 3.8em;
-  display: inline-block;
-  overflow: hidden;
-  background-color: lightgray;
-  color: var(--color-main-dark);
   text-align: center;
-  font-weight: bold;
+  align-items: center;
+  justify-content: center;
 }
 
-.home_infos div {
-  font-size: large;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 10em;
-  padding-right: 10em;
+.ijLtqq {
+  transition: color 0.5s linear 0s;
+  font-weight: normal;
+  position: relative;
+  z-index: 1;
+  font-size: 6rem;
+  color: rgb(255, 255, 255);
+}
+
+.kTRhvQ {
+  transition: color 0.5s linear 0s;
+  font-weight: normal;
+  position: relative;
+  z-index: 1;
+  font-size: 3.5rem;
+  margin: 4rem 0px;
+  color: rgb(204, 204, 204);
 }
 
 * {
@@ -143,4 +137,68 @@ nav button:hover {
   position: absolute;
   left: 2em;
   bottom: 2em;
+}
+
+.social .icon {
+  height: 4.5rem;
+  width: 4.5rem;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.social .button {
+  transition: color 0.5s linear 0s;
+  height: 6rem;
+  width: 6rem;
+  color: rgb(255, 255, 255);
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+  border-radius: 25%;
+  box-shadow: 1em;
+}
+
+.icon {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #0ddff2;
+}
+
+.icon:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
