@@ -29,6 +29,9 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  display: block;
 }
 
 main {
@@ -55,7 +58,7 @@ nav {
 }
 
 nav button {
-  border: 2px solid black;
+  border: 2px solid white;
   width: 8em;
   padding: 0.5em 1em;
   background: none;
@@ -65,13 +68,12 @@ nav button {
   font-weight: bold;
   font-size: 15px;
   transition-duration: 0.4s;
+  color: white;
 }
 
 nav button:hover {
-  background-color: var(--color-main-light);
-  color: white;
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background-color: #0047d488;
+  box-shadow: 0 12px 16px 0 #0ddff2, 0 17px 50px 0 #0ddff2;
 }
 
 #reference {
@@ -102,6 +104,7 @@ nav button:hover {
   z-index: 1;
   font-size: 6rem;
   color: rgb(255, 255, 255);
+  top: 1em;
 }
 
 .kTRhvQ {
@@ -112,6 +115,7 @@ nav button:hover {
   font-size: 3.5rem;
   margin: 4rem 0px;
   color: rgb(204, 204, 204);
+  top: 1em;
 }
 
 * {
@@ -145,12 +149,13 @@ nav button:hover {
   padding: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
+  top: 8em;
 }
 
 .social .button {
   transition: color 0.5s linear 0s;
-  height: 6rem;
-  width: 6rem;
+  height: 4rem;
+  width: 4rem;
   color: rgb(255, 255, 255);
   display: table-cell;
   vertical-align: middle;
@@ -201,4 +206,107 @@ nav button:hover {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+#profile {
+  display: grid;
+  gap: 2em 1em;
+  grid-template:
+    ". header header header ."
+    ". . . . ."
+    ". text . image ."
+    ". skills . image ."
+    ". languages . hobbies .";
+  grid-template-columns: 1fr auto 2em auto 1fr;
+  grid-template-rows: 3em 6em 2em fit-content(10vh) minmax(300px, 20vh);
+}
+
+#profile {
+  scroll-margin-top: -9em;
+  position: relative;
+  background: var(--color-background-left);
+  background: var(--color-background-gradient);
+  color: var(--color-main);
+  align-items: center;
+  padding-top: 10em;
+  z-index: 2;
+}
+
+#profile::before {
+  content: "";
+  z-index: -1;
+  transform: scaleY(1.4);
+  background: var(--color-background-gradient);
+  filter: blur(20px);
+  opacity: 1;
+  transition: opacity 0.3s;
+  position: absolute;
+  top: -1em;
+  right: -5em;
+  left: -5em;
+  bottom: 90%;
+}
+
+#profile .skills {
+  grid-area: skills;
+}
+
+#profile h1 {
+  top: 0;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  min-width: 70vw;
+}
+
+#profile .languages {
+  grid-area: languages;
+  align-self: start;
+}
+
+#profile .hobbies {
+  max-width: 20vw;
+  place-self: start;
+  justify-self: center;
+  grid-area: hobbies;
+  flex-direction: column;
+  gap: 0;
+}
+
+.icon-container li {
+  gap: 1em;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  place-items: center;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+#profile img {
+  place-self: center;
+  object-fit: cover;
+}
+.icon-container li img {
+  width: 32px;
+}
+
+.progress-bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  mix-blend-mode: color-burn;
+  background-color: #fff3e2;
 }
