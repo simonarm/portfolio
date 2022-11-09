@@ -196,39 +196,11 @@ nav button:hover {
   opacity: 1;
 }
 
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
 #profile {
-  display: grid;
-  gap: 2em 1em;
-  grid-template:
-    ". header header header ."
-    ". . . . ."
-    ". text . image ."
-    ". skills . image ."
-    ". languages . hobbies .";
-  grid-template-columns: 1fr auto 2em auto 1fr;
-  grid-template-rows: 3em 6em 2em fit-content(10vh) minmax(300px, 20vh);
-}
-
-#profile {
-  scroll-margin-top: -9em;
   position: relative;
-  background: var(--color-background-left);
-  background: var(--color-background-gradient);
-  color: var(--color-main);
-  align-items: center;
-  padding-top: 10em;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
   z-index: 2;
 }
 
@@ -247,13 +219,6 @@ nav button:hover {
   bottom: 90%;
 }
 
-#profile .skills {
-  grid-area: skills;
-}
-
-#profile h1 {
-  top: 0;
-}
 .list {
   display: flex;
   flex-direction: column;
@@ -261,43 +226,45 @@ nav button:hover {
   min-width: 70vw;
 }
 
-#profile .languages {
-  grid-area: languages;
-  align-self: start;
-}
-
-#profile .hobbies {
-  max-width: 20vw;
-  place-self: start;
-  justify-self: center;
-  grid-area: hobbies;
-  flex-direction: column;
-  gap: 0;
-}
-
 .icon-container li {
-  gap: 1em;
-  list-style: none;
   display: flex;
-  justify-content: flex-start;
+  gap: 10px;
   place-items: center;
+  justify-content: flex-start;
 }
 
-li {
-  display: list-item;
-  text-align: -webkit-match-parent;
+.icon-container {
+  padding: 0 1em;
+}
+
+.icon-container li img {
+  width: 32px;
 }
 
 ul {
-  list-style-type: disc;
+  list-style: none;
 }
 
-#profile img {
-  place-self: center;
-  object-fit: cover;
+.languages li {
+  margin-bottom: 5px;
 }
-.icon-container li img {
-  width: 32px;
+
+#profilbild {
+  max-width: 10vw;
+}
+
+.progress-bar {
+  align-self: flex-end;
+  position: relative;
+  height: 0.7em;
+  width: 10em;
+}
+
+.progress-bar-fill {
+  position: relative;
+  height: 100%;
+  width: 0;
+  background-color: white;
 }
 
 .progress-bar::after {
@@ -309,4 +276,53 @@ ul {
   bottom: 0;
   mix-blend-mode: color-burn;
   background-color: #fff3e2;
+}
+
+.flex-spacer {
+  flex: 1 1 auto;
+}
+
+.timeline {
+  border-left: 4px solid black;
+  padding: 2em 0;
+  position: relative;
+  margin-left: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.timeline::before {
+  content: "Heute";
+  position: absolute;
+  top: -1.3em;
+  left: -1.2em;
+  font-weight: bold;
+  color: black;
+}
+
+.timeline::after {
+  content: "2013";
+  position: absolute;
+  bottom: -1.3em;
+  left: -1.2em;
+  font-weight: bold;
+  color: black;
+}
+
+.timeline-entry {
+  position: relative;
+  left: 1.2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-entry::before {
+  content: "";
+  height: 10px;
+  width: 10px;
+  background-color: #0ddff2;
+  position: absolute;
+  top: 50%;
+  border: 5px solid blue;
+  left: -1.65em;
+  border-radius: 50em;
 }
