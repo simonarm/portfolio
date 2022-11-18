@@ -1,0 +1,115 @@
+#cv {
+  display: flex;
+  flex-direction: column;
+}
+
+#cv .flex-spacer {
+  flex: 1 1 auto;
+}
+
+.timeline {
+  border-left: 4px solid black;
+  padding: 2em 0;
+  position: relative;
+  margin-left: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 10em;
+  width: 20em;
+  left: 20em;
+}
+
+.timeline::before {
+  content: "Heute";
+  position: absolute;
+  top: -1.3em;
+  left: -1.2em;
+  font-weight: bold;
+  color: black;
+}
+
+.timeline::after {
+  content: "2013";
+  position: absolute;
+  bottom: -1.3em;
+  left: -1.2em;
+  font-weight: bold;
+  color: black;
+}
+
+.timeline-entry {
+  position: relative;
+  left: 1.2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-entry::before {
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #0ddff2;
+  position: absolute;
+  top: 45%;
+  border: 5px solid blue;
+  left: -1.65em;
+  border-radius: 50em;
+}
+
+.tl-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.location-dates {
+  display: flex;
+  font-style: italic;
+  font-size: 14px;
+  border-bottom: 1px solid black;
+  margin-bottom: 6px;
+  padding-bottom: 2px;
+}
+
+.flex-spacer {
+  margin: 0 3px;
+  width: 1px;
+  background: black;
+}
+
+.tl-description {
+  font-size: 15px;
+}
+
+.tl-description ul {
+  list-style: unset;
+  margin-top: 3px;
+  padding-bottom: 2em;
+  font-size: 13px;
+}
+
+.timeline2 {
+  border-left: 4px solid black;
+  padding: 2em 0;
+  position: relative;
+  margin-left: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 20em;
+  left: 70em;
+}
+
+.timeline2::before {
+  content: "Heute";
+  position: absolute;
+  top: -1.3em;
+  left: -1.2em;
+  font-weight: bold;
+  color: black;
+}
+
+.timeline2::after {
+  content: "2013";
+  position: absolute;
+  bottom: -1.3em;
+  left: -1.2em;
+  font-weight: bold;
+  color: black;
+}
