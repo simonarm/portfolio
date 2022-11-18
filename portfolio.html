@@ -11,6 +11,8 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  <script src="app.min.js"></script>
+  <script src="vendors.min.js"></script>
 </head>
 <body>
   <main>
@@ -37,20 +39,22 @@
       <div class="home_infos">
         <div
           data-v2="name"
-          aria-label="My name is Adam Alston"
-          title="My name is Adam Alston"
+          aria-label="My name is Simon Paul Arm"
+          title="My name is Simon Paul Arm"
           class="sc-gsnTZi ijLtqq"
         >
           Simon Paul Arm
         </div>
 
-        <div
-          data-v2="title"
-          aria-label="I am a software engineer"
-          title="I am a software engineer"
-          class="sc-dkzDqf kTRhvQ"
-        >
-          Wirtschaftsinformatiker
+        <div class="landing-title">
+          <div>
+            <span
+              id="txt-rotate"
+              data-period="2000"
+              data-rotate='["Wirtschaftsinformatiker / Konstrukteur", "scroll down for more information"]'
+              ><span class="wrap">sc</span></span
+            >
+          </div>
         </div>
       </div>
       <div class="credits">
@@ -420,4 +424,10 @@
       }
     }
   </script>
+
+  <style type="text/css">
+    #txt-rotate > .wrap {
+      border-right: 0.08em solid #666;
+    }
+  </style>
 </body>
