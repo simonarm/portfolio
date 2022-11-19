@@ -8,6 +8,8 @@
 
 #contact textarea,
 #contact input {
+  position: relative;
+  top: 8em;
   border: 1px solid;
   background: transparent;
   width: 60vw;
@@ -32,7 +34,7 @@
 
 #contact .Anfrage {
   position: relative;
-  margin-top: 10px;
+  margin-top: 120px;
 }
 
 #contact button:hover {

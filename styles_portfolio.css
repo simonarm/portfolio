@@ -118,6 +118,10 @@ nav button:hover {
   top: 0.8em;
 }
 
+#txt-rotate .wrap {
+  border-right: 0.08em solid #0ddff2;
+}
+
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -144,7 +148,7 @@ nav button:hover {
   padding: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  top: 8em;
+  top: 10em;
 }
 
 .social .button {

@@ -40,6 +40,7 @@
 
 .icon-container li img {
   width: 32px;
+  margin-bottom: 10px;
 }
 
 ul {
@@ -47,7 +48,7 @@ ul {
 }
 
 .languages li {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 #profilbild {
