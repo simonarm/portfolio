@@ -83,7 +83,7 @@ ul {
 */
 
 #profile {
-  padding: 80px 0;
+  padding: 100px 40px;
   color: #ababab;
   background-color: black;
 }
@@ -148,7 +148,7 @@ ul {
 
 .tab-contents ul li span {
   color: #0ddff2;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .tab-contents {
@@ -157,4 +157,8 @@ ul {
 
 .tab-contents.active-tab {
   display: block;
+}
+
+.tab-contents li img {
+  width: 32px;
 }

@@ -5,6 +5,7 @@
   --color-main-light: #4d5761;
 }
 
+/*
 section {
   height: 100vh;
   width: 100%;
@@ -19,6 +20,9 @@ section h1 {
   padding: 1em;
   background-color: var(--color-mid-dark);
 }
+*/
+
+/*
 nav a {
   text-decoration: none;
 }
@@ -97,16 +101,79 @@ nav button:hover {
   justify-content: center;
 }
 
-.ijLtqq {
-  transition: color 0.5s linear 0s;
-  font-weight: normal;
+*/
+
+#header {
+  width: 100%;
+  height: 100vh;
   position: relative;
-  z-index: 1;
-  font-size: 6rem;
-  color: rgb(255, 255, 255);
-  top: 0.8em;
+  background-image: url("assets/space.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
+.container {
+  padding: 10px 10%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 200px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #0047d466;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+  background-color: #0ddff2;
+  box-shadow: 15px 15px 15px 0 #0ddff2, 0 17px 50px 0 #0ddff2;
+}
+
+.header-text {
+  margin-top: 10%;
+  font-size: 30px;
+  color: white;
+}
+
+.header-text h1 {
+  font-size: 60px;
+  margin-top: 20px;
+  color: white;
+}
+
+.header-text h1 span {
+  color: #0ddff2;
+}
+
+/*
 .landing-title {
   transition: color 0.5s linear 0s;
   font-weight: normal;
@@ -116,7 +183,7 @@ nav button:hover {
   margin: 4rem 0px;
   color: rgb(204, 204, 204);
   top: 0.8em;
-}
+}*/
 
 #txt-rotate .wrap {
   border-right: 0.08em solid #0ddff2;
@@ -137,18 +204,13 @@ nav button:hover {
   text-decoration: none;
 }
 
-.aside {
-  position: absolute;
-  bottom: 2em;
-}
-
 .social .icon {
   height: 4.5rem;
   width: 4.5rem;
   padding: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  top: 10em;
+  top: 1em;
 }
 
 .social .button {

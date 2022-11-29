@@ -16,39 +16,20 @@
 </head>
 <body>
   <main>
-    <div id="reference">
-      <nav id="main-nav">
-        <a href="#home"
-          ><span><button>Home</button></span></a
-        >
-        <a href="#profile"
-          ><span><button>Profile</button></span></a
-        >
-        <a href="#cv"
-          ><span><button>CV</button></span></a
-        >
-        <a href="#portfolio"
-          ><span><button>Portfolio</button></span></a
-        >
-        <a href="#contact"
-          ><span><button>Contact</button></span></a
-        >
-      </nav>
-    </div>
-
-    <section id="home">
-      <div class="home_infos">
-        <div
-          data-v2="name"
-          aria-label="My name is Simon Paul Arm"
-          title="My name is Simon Paul Arm"
-          class="sc-gsnTZi ijLtqq"
-        >
-          Simon Paul Arm
-        </div>
-
-        <div class="landing-title">
-          <div>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="assets/large.png" class="logo" />
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">CV</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <div class="landing-title">
             <span
               id="txt-rotate"
               data-period="2000"
@@ -56,8 +37,24 @@
               ><span class="wrap"></span
             ></span>
           </div>
+          <h1>
+            Hi, I'm <span> Simon </span>Paul Arm <br />
+            From Switzerland
+          </h1>
         </div>
       </div>
+
+      <div class="landing-title">
+        <div>
+          <span
+            id="txt-rotate"
+            data-period="2000"
+            data-rotate='["Wirtschaftsinformatikstudent", "Abacus Consultant","Konstrukteur EFZ", "Bartender"]'
+            ><span class="wrap"></span
+          ></span>
+        </div>
+      </div>
+
       <div class="credits">
         <a
           href="https://pixabay.com/de/illustrations/w%c3%bcrfel-geometrie-abstrakt-objekte-3381438/"
@@ -169,7 +166,7 @@
             <span class="icon_title" data-v2="Email"></span></a
         ></span>
       </div>
-    </section>
+    </div>
 
     <div id="profile">
       <div class="container">
@@ -196,45 +193,34 @@
               <p class="tab-links active-link" onclick="opentab('skills')">
                 Skills
               </p>
-              <p class="tab-links" onclick="opentab('experience')">
-                Experience
-              </p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('sprachen')">Sprachen</p>
+              <p class="tab-links" onclick="opentab('hobby')">Hobbies</p>
             </div>
             <div class="tab-contents active-tab" id="skills">
               <ul>
-                <li>
-                  <span>Solide Edge</span><br />3D-Modelle & technische
-                  Zeichnungen
-                </li>
-                <li>
-                  <span>Bartender</span><br />Designing web/app interfaces
-                </li>
-                <li><span>Support</span><br />Alle Supportfälle</li>
+                <li><span>Solide Edge</span><br />CAD - Sehr gute Kentnisse</li>
+                <li><span>Abacus</span><br />ERP - Sehr gute Kentnisse</li>
+                <li><span>HTML</span><br />Anfänger</li>
+                <li><span>CSS</span><br />Anfänger</li>
               </ul>
             </div>
-            <div class="tab-contents" id="experience">
+            <div class="tab-contents" id="sprachen">
               <ul>
-                <li>
-                  <span>Konstrukteur</span><br />3D-Modelle & technische
-                  Zeichnungen
-                </li>
-                <li>
-                  <span>Abacus Supporter</span><br />Designing web/app
-                  interfaces
-                </li>
-                <li><span>Polymech</span><br />Alle Supportfälle</li>
+                <li><span>Deutsch</span><br />Muttersprache</li>
+                <li><span>Englisch</span><br />Niveau B1</li>
+                <li><span>Französisch</span><br />Niveau B1</li>
               </ul>
             </div>
-            <div class="tab-contents" id="education">
+            <div class="tab-contents" id="hobby">
               <ul>
+                <li><span>Skifahren</span><br />Schönwetterskifahrer</li>
                 <li>
-                  <span>BFH</span><br />3D-Modelle & technische Zeichnungen
+                  <span>Velofahren</span><br />Besitzer eines alten Rennvelo
                 </li>
                 <li>
-                  <span>Berufsmatur</span><br />Designing web/app interfaces
+                  <span>Freunde treffen</span><br />Bei sportlichen
+                  Freizeitaktivitäten oder mal zum Fübi
                 </li>
-                <li><span>Lehre</span><br />Alle Supportfälle</li>
               </ul>
             </div>
           </div>
