@@ -16,24 +16,25 @@
 </head>
 <body>
   <main>
-    <div id="reference"></div>
-    <nav id="main-nav">
-      <a href="#home"
-        ><span><button>Home</button></span></a
-      >
-      <a href="#profile"
-        ><span><button>Profile</button></span></a
-      >
-      <a href="#cv"
-        ><span><button>CV</button></span></a
-      >
-      <a href="#portfolio"
-        ><span><button>Portfolio</button></span></a
-      >
-      <a href="#contact"
-        ><span><button>Contact</button></span></a
-      >
-    </nav>
+    <div id="reference">
+      <nav id="main-nav">
+        <a href="#home"
+          ><span><button>Home</button></span></a
+        >
+        <a href="#profile"
+          ><span><button>Profile</button></span></a
+        >
+        <a href="#cv"
+          ><span><button>CV</button></span></a
+        >
+        <a href="#portfolio"
+          ><span><button>Portfolio</button></span></a
+        >
+        <a href="#contact"
+          ><span><button>Contact</button></span></a
+        >
+      </nav>
+    </div>
 
     <section id="home">
       <div class="home_infos">
@@ -51,7 +52,7 @@
             <span
               id="txt-rotate"
               data-period="2000"
-              data-rotate='["Wirtschaftsinformatikstudent", "Konstrukteur EFZ", "Bartender"]'
+              data-rotate='["Wirtschaftsinformatikstudent", "Abacus Consultant","Konstrukteur EFZ", "Bartender"]'
               ><span class="wrap"></span
             ></span>
           </div>
@@ -169,6 +170,79 @@
         ></span>
       </div>
     </section>
+
+    <div id="profile">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="assets/profilbild.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+              invidunt ut labore et dolore magna aliquyam erat, sed diam
+              voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+              dolor sit amet.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Solide Edge</span><br />3D-Modelle & technische
+                  Zeichnungen
+                </li>
+                <li>
+                  <span>Bartender</span><br />Designing web/app interfaces
+                </li>
+                <li><span>Support</span><br />Alle Supportfälle</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Konstrukteur</span><br />3D-Modelle & technische
+                  Zeichnungen
+                </li>
+                <li>
+                  <span>Abacus Supporter</span><br />Designing web/app
+                  interfaces
+                </li>
+                <li><span>Polymech</span><br />Alle Supportfälle</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>BFH</span><br />3D-Modelle & technische Zeichnungen
+                </li>
+                <li>
+                  <span>Berufsmatur</span><br />Designing web/app interfaces
+                </li>
+                <li><span>Lehre</span><br />Alle Supportfälle</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--    
     <section id="profile">
       <h1>Profile</h1>
       <p>Allrounder mit vielseitigen ERP-Kenntnissen</p>
@@ -282,6 +356,8 @@
         </ul>
       </div>
     </section>
+-->
+
     <section id="cv">
       <h1>Curriculum Vitae</h1>
       <div class="timeline">
@@ -408,6 +484,23 @@
       </div>
     </section>
   </main>
+
+  <!--profile click-->
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
 
   <script>
     window.addEventListener("scroll", () => {
