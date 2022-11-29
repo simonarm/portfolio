@@ -5,6 +5,10 @@
   --color-main-light: #4d5761;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*
 section {
   height: 100vh;
@@ -27,9 +31,6 @@ nav a {
   text-decoration: none;
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
 body {
   margin: 0;
@@ -113,24 +114,24 @@ nav button:hover {
 }
 
 .container {
-  padding: 10px 10%;
+  padding: 10px 5%;
 }
 
 nav {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .logo {
+  position: relative;
   width: 200px;
 }
 
 nav ul li {
   display: inline-block;
   list-style: none;
-  margin: 10px 20px;
+  margin: 15px 20px;
 }
 
 nav ul li a {
@@ -158,9 +159,9 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-  margin-top: 10%;
+  margin-top: 8%;
   font-size: 30px;
-  color: white;
+  color: rgba(255, 255, 255, 0.671);
 }
 
 .header-text h1 {
@@ -172,18 +173,6 @@ nav ul li a:hover::after {
 .header-text h1 span {
   color: #0ddff2;
 }
-
-/*
-.landing-title {
-  transition: color 0.5s linear 0s;
-  font-weight: normal;
-  position: relative;
-  z-index: 1;
-  font-size: 3.5rem;
-  margin: 4rem 0px;
-  color: rgb(204, 204, 204);
-  top: 0.8em;
-}*/
 
 #txt-rotate .wrap {
   border-right: 0.08em solid #0ddff2;
@@ -205,27 +194,21 @@ nav ul li a:hover::after {
 }
 
 .social .icon {
-  height: 4.5rem;
-  width: 4.5rem;
+  height: 3rem;
+  width: 3rem;
   padding: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  top: 1em;
+  position: relative;
+  top: 5em;
+  left: -1.5em;
 }
 
 .social .button {
-  transition: color 0.5s linear 0s;
-  height: 4rem;
-  width: 4rem;
   color: rgb(255, 255, 255);
   display: table-cell;
-  vertical-align: middle;
-  text-align: center;
   text-decoration: none;
   position: relative;
-  z-index: 1;
-  border-radius: 25%;
-  box-shadow: 1em;
 }
 
 .icon {
