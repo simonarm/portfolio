@@ -206,8 +206,21 @@
 
     <div id="cv">
       <div class="container">
-        <h1>Curriculum Vitae</h1>
-        <div class="timeline">
+        <h1 class="sub-title">Curriculum <span>Vitae</span></h1>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          ipsum dolor sit amet.
+        </p>
+        <div class="timeline-titles">
+          <p class="timeline-links active-link" onclick="opentab('experience')">
+            Experience
+          </p>
+          <p class="timeline-links" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="timeline active-tab" id="experience">
           <div class="timeline-entry">
             <div class="tl-title">Konstrukteur</div>
             <div class="location-dates">
@@ -254,7 +267,7 @@
             </div>
           </div>
         </div>
-        <div class="timeline2">
+        <div class="timeline" id="education">
           <div class="timeline-entry">
             <div class="tl-title">
               Bachelor of Science Wirtschaftsinformatik
@@ -312,7 +325,7 @@
       <h1>Portfolio</h1>
     </section>
 
-    <!--Section Conact--------------------------------------------------------------------->
+    <!--Section Contact--------------------------------------------------------------------->
 
     <section id="contact">
       <h1>Contact</h1>
@@ -345,6 +358,23 @@
   <script>
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+  <!--cv click--------------------------------------->
+  <script>
+    var tablinks = document.getElementsByClassName("timeline-links");
+    var tabcontents = document.getElementsByClassName("timeline");
 
     function opentab(tabname) {
       for (tablink of tablinks) {
