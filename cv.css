@@ -8,6 +8,10 @@
   flex: 1 1 auto;
 }
 
+#cv .container {
+  height: 130vh;
+}
+
 #cv .container p {
   color: white;
   width: 50%;
