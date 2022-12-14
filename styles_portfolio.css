@@ -120,11 +120,11 @@ nav button:hover {
   background-position: center;
 }
 
-/*
+
 .container {
   padding: 10px 5%;
 }
-*/
+
 nav {
   display: flex;
   justify-content: space-between;
