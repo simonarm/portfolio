@@ -32,7 +32,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#profile">Profile</a></li>
             <li><a href="#cv">CV</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#extra">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
             <i class="fas fa-times" onclick="closemenu()"></i>
           </ul>
@@ -80,23 +80,17 @@
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam voluptua. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-              amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-              invidunt ut labore et dolore magna aliquyam erat, sed diam
-              voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-              dolor sit amet.
+              dolores et ea rebum. 
             </p>
 
             <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">
+              <p class="tab-links active-me" onclick="opentab('skills')">
                 Skills
               </p>
               <p class="tab-links" onclick="opentab('sprachen')">Sprachen</p>
               <p class="tab-links" onclick="opentab('hobby')">Hobbies</p>
             </div>
-            <div class="tab-contents active-tab" id="skills">
+            <div class="tab-contents active-con" id="skills">
               <ul>
                 <li><span>Solide Edge</span><br />CAD - Sehr gute Kentnisse</li>
                 <li><span>Abacus</span><br />ERP - Sehr gute Kentnisse</li>
@@ -132,141 +126,153 @@
 
     <div id="cv">
       <div class="container">
-        <h1 class="sub-title">Curriculum <span>Vitae</span></h1>
-        <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-          ipsum dolor sit amet.
-        </p>
-        <div class="timeline-titles">
-          <p class="timeline-links active-link" onclick="opentab('experience')">
-            Experience
-          </p>
-          <p class="timeline-links" onclick="opentab('education')">Education</p>
-        </div>
-        <div class="timeline active-tab" id="experience">
-          <div class="timeline-entry">
-            <div class="tl-title">Abacus Supporter</div>
-            <div class="location-dates">
-              <div class="tl-location">Fidigit AG</div>
-              <div class="flex-spacer"></div>
-              <div class="tl-dates">Seit 2022</div>
+        <div class="row">
+          <div class="about-col-1" >
+            <h1 class="sub-title">Curriculum <span>Vitae</span></h1>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+              sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+              rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+              ipsum dolor sit amet.
+            </p>
+            <div class="timeline-titles">
+              <p class="timeline-links active-link" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="timeline-links" onclick="opentab('education')">Education</p>
+            </div>  
+            <div class="quoteContainer">
+              <div id="quote"></div>
+              <div id="author"></div>
             </div>
-            <div class="tl-description">
-              <span>Helpdesksupport ERP</span>
-              <ul>
-                <li>Serial Support</li>
-                <li>Support der Serienproduktion</li>
-              </ul>
-            </div>
+            
           </div>
-          <div class="timeline-entry">
-            <div class="tl-title">Konstrukteur</div>
-            <div class="location-dates">
-              <div class="tl-location">Aebi & Co. AG</div>
-              <div class="flex-spacer"></div>
-              <div class="tl-dates">2021-2022</div>
+
+          <div class="about-col-2 time">
+            <div class="timeline active-tab" id="experience">
+              <div class="timeline-entry">
+                <div class="tl-title">Abacus Supporter</div>
+                <div class="location-dates">
+                  <div class="tl-location">Fidigit AG</div>
+                  <div class="flex-spacer"></div>
+                  <div class="tl-dates">Seit 2022</div>
+                </div>
+                <div class="tl-description">
+                  <span>Helpdesksupport ERP</span>
+                  <ul>
+                    <li>Serial Support</li>
+                    <li>Support der Serienproduktion</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="timeline-entry">
+                <div class="tl-title">Konstrukteur</div>
+                <div class="location-dates">
+                  <div class="tl-location">Aebi & Co. AG</div>
+                  <div class="flex-spacer"></div>
+                  <div class="tl-dates">2021-2022</div>
+                </div>
+                <div class="tl-description">
+                  <span>Entwicklung & Konstruktion</span>
+                  <ul>
+                    <li>Serial Support</li>
+                    <li>Support der Serienproduktion</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="timeline-entry">
+                <div class="tl-title">Verkaufsfahrer</div>
+                <div class="location-dates">
+                  <div class="tl-location">Bofrost</div>
+                  <div class="flex-spacer"></div>
+                  <div class="tl-dates">2020-2021</div>
+                </div>
+                <div class="tl-description">
+                  <span>Verkauf</span>
+                  <ul>
+                    <li>Gefrierkost</li>
+                    <li>Privatkunden</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="timeline-entry">
+                <div class="tl-title">Polymechaniker</div>
+                <div class="location-dates">
+                  <div class="tl-location">Aebi & Co. AG</div>
+                  <div class="flex-spacer"></div>
+                  <div class="tl-dates">2013-2017</div>
+                </div>
+                <div class="tl-description">
+                  <span>Fertigung & Montage</span>
+                  <ul>
+                    <li>Fräsen, Drehen, Bohren</li>
+                    <li>Baugruppen und Serienmontage</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="tl-description">
-              <span>Entwicklung & Konstruktion</span>
-              <ul>
-                <li>Serial Support</li>
-                <li>Support der Serienproduktion</li>
-              </ul>
-            </div>
-          </div>
-          <div class="timeline-entry">
-            <div class="tl-title">Verkaufsfahrer</div>
-            <div class="location-dates">
-              <div class="tl-location">Bofrost</div>
-              <div class="flex-spacer"></div>
-              <div class="tl-dates">2020-2021</div>
-            </div>
-            <div class="tl-description">
-              <span>Verkauf</span>
-              <ul>
-                <li>Gefrierkost</li>
-                <li>Privatkunden</li>
-              </ul>
-            </div>
-          </div>
-          <div class="timeline-entry">
-            <div class="tl-title">Polymechaniker</div>
-            <div class="location-dates">
-              <div class="tl-location">Aebi & Co. AG</div>
-              <div class="flex-spacer"></div>
-              <div class="tl-dates">2013-2017</div>
-            </div>
-            <div class="tl-description">
-              <span>Fertigung & Montage</span>
-              <ul>
-                <li>Fräsen, Drehen, Bohren</li>
-                <li>Baugruppen und Serienmontage</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="timeline" id="education">
-          <div class="timeline-entry">
-            <div class="tl-title">Bachelor of Science</div>
-            <div class="location-dates">
-              <div class="tl-location">Berner Fachhochschule</div>
-              <div class="flex-spacer"></div>
-              <div class="tl-dates">Seit 2020</div>
-            </div>
-            <div class="tl-description">
-              <span>Wirtschaftsinformatik</span>
-              <ul>
-                <li>Grund- & Hauptstudium</li>
-                <li>Vertiefung Data Science</li>
-              </ul>
-            </div>
-          </div>
-          <div class="timeline-entry">
-            <div class="tl-title">Berufsmaturität</div>
-            <div class="location-dates">
-              <div class="tl-location">Bfs Langenthal</div>
-              <div class="flex-spacer"></div>
-              <div class="tl-dates">2018-2019</div>
-            </div>
-            <div class="tl-description">
-              <span>Technische BM</span>
-              <ul>
-                <li>Schwerpunkt Mathematik</li>
-                <li>Restliche Grundfächer</li>
-              </ul>
-            </div>
-          </div>
-          <div class="timeline-entry">
-            <div class="tl-title">Bartender School</div>
-            <div class="location-dates">
-              <div class="tl-location">EBS Stockholm</div>
-              <div class="flex-spacer"></div>
-              <div class="tl-dates">Sommer 2017</div>
-            </div>
-            <div class="tl-description">
-              <span>European Bartender School EBS</span>
-              <ul>
-                <li>Drink mixing, Free Pouring</li>
-                <li>Exhibition Flair, Theorie of Spirits</li>
-              </ul>
-            </div>
-          </div>
-          <div class="timeline-entry">
-            <div class="tl-title">Polymechaniker EFZ</div>
-            <div class="location-dates">
-              <div class="tl-location">Aebi & Co. AG</div>
-              <div class="flex-spacer"></div>
-              <div class="tl-dates">2013-2017</div>
-            </div>
-            <div class="tl-description">
-              <span>Fertigung</span>
-              <ul>
-                <li>Fräsen, Drehen, Bohren</li>
-                <li>CNC-Produktion</li>
-              </ul>
+            <div class="timeline" id="education">
+              <div class="timeline-entry">
+                <div class="tl-title">Bachelor of Science</div>
+                <div class="location-dates">
+                  <div class="tl-location">Berner Fachhochschule</div>
+                  <div class="flex-spacer"></div>
+                  <div class="tl-dates">Seit 2020</div>
+                </div>
+                <div class="tl-description">
+                  <span>Wirtschaftsinformatik</span>
+                  <ul>
+                    <li>Grund- & Hauptstudium</li>
+                    <li>Vertiefung Data Science</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="timeline-entry">
+                <div class="tl-title">Berufsmaturität</div>
+                <div class="location-dates">
+                  <div class="tl-location">Bfs Langenthal</div>
+                  <div class="flex-spacer"></div>
+                  <div class="tl-dates">2018-2019</div>
+                </div>
+                <div class="tl-description">
+                  <span>Technische BM</span>
+                  <ul>
+                    <li>Schwerpunkt Mathematik</li>
+                    <li>Restliche Grundfächer</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="timeline-entry">
+                <div class="tl-title">Bartender School</div>
+                <div class="location-dates">
+                  <div class="tl-location">EBS Stockholm</div>
+                  <div class="flex-spacer"></div>
+                  <div class="tl-dates">Sommer 2017</div>
+                </div>
+                <div class="tl-description">
+                  <span>European Bartender School EBS</span>
+                  <ul>
+                    <li>Drink mixing, Free Pouring</li>
+                    <li>Exhibition Flair, Theorie of Spirits</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="timeline-entry">
+                <div class="tl-title">Polymechaniker EFZ</div>
+                <div class="location-dates">
+                  <div class="tl-location">Aebi & Co. AG</div>
+                  <div class="flex-spacer"></div>
+                  <div class="tl-dates">2013-2017</div>
+                </div>
+                <div class="tl-description">
+                  <span>Fertigung</span>
+                  <ul>
+                    <li>Fräsen, Drehen, Bohren</li>
+                    <li>CNC-Produktion</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -316,7 +322,7 @@
 
     <div id="extra">
       <div class="container">
-        <h1 class="sub-title">My Work</h1>
+        <h1 class="sub-title"> <span>My</span> Work</h1>
         <div class="extra-list">
           <div class="extra">
             <img src="assets/bartender.jpg">
@@ -354,7 +360,7 @@
       <div class="container">
         <div class="row">
           <div class="contl">
-            <h1 class="sub-title">Contact Me</h1>
+            <h1 class="sub-title">Contact <span>Me</span></h1>
             <p><i class="fa-solid fa-paper-plane"></i> simonpaul.arm@students.bfh.ch</p>
             <p><i class="fa-solid fa-phone"></i> 079 999 99 99</p>
             <div class="social">
@@ -376,6 +382,11 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="quoteContainer">
+      <div id="quote"></div>
+      <div id="author"></div>
     </div>
 
 
@@ -414,29 +425,29 @@
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
 
-    function opentab(tabname) {
+    function opentab(tabme) {
       for (tablink of tablinks) {
-        tablink.classList.remove("active-link");
+        tablink.classList.remove("active-me");
       }
       for (tabcontent of tabcontents) {
-        tabcontent.classList.remove("active-tab");
+        tabcontent.classList.remove("active-con");
       }
-      event.currentTarget.classList.add("active-link");
-      document.getElementById(tabname).classList.add("active-tab");
+      event.currentTarget.classList.add("active-me");
+      document.getElementById(tabme).classList.add("active-con");
     }
   </script>
 
   <!--cv click--------------------------------------->
   <script>
-    var tablinks = document.getElementsByClassName("timeline-links");
-    var tabcontents = document.getElementsByClassName("timeline");
+    var timelinelinks = document.getElementsByClassName("timeline-links");
+    var timelinecontents = document.getElementsByClassName("timeline");
 
     function opentab(tabname) {
-      for (tablink of tablinks) {
-        tablink.classList.remove("active-link");
+      for (timelinelink of timelinelinks) {
+        timelinelink.classList.remove("active-link");
       }
-      for (tabcontent of tabcontents) {
-        tabcontent.classList.remove("active-tab");
+      for (timelinecontent of timelinecontents) {
+        timelinecontent.classList.remove("active-tab");
       }
       event.currentTarget.classList.add("active-link");
       document.getElementById(tabname).classList.add("active-tab");
@@ -468,11 +479,16 @@
     }
 
     function closemenu(){
-      sidemenu.style.right = "-200px";
+      sidemenu.style.right = "-250px";
     }
 
   </script>
 
+
+<!--API Quote--------------------------------->
+  <script src="main.js" type="module"></script> 
+
+<!--Style Text rotate on Home Screen-->  
   <style type="text/css">
     #txt-rotate > .wrap {
       border-right: 0.08em solid #666;
