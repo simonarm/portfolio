@@ -137,10 +137,10 @@
               ipsum dolor sit amet.
             </p>
             <div class="timeline-titles">
-              <p class="timeline-links active-link" onclick="opentab('experience')">
+              <p class="timeline-links active-link" onclick="opentimeline('experience')">
                 Experience
               </p>
-              <p class="timeline-links" onclick="opentab('education')">Education</p>
+              <p class="timeline-links" onclick="opentimeline('education')">Education</p>
             </div>  
             <div class="quoteContainer">
               <div id="quote"></div>
@@ -355,8 +355,8 @@
       <a href="#" class="btn">See more</a>
     </div>
 
-    <!--Section Cont--------------------------------------------------------------------->
-    <div id="cont">
+    <!--Section Contact--------------------------------------------------------------------->
+    <div id="contact">
       <div class="container">
         <div class="row">
           <div class="contl">
@@ -379,44 +379,26 @@
               <textarea name="Mesage" rows="6" placeholder="Your Mesage"></textarea>
               <button type="submit" class="btn btn2 ">Submit</button>
             </form>
+            <div id="like_button_container" class="btn btn2"></div>
+
+            <!-- Load React. -->
+            <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+            <script
+              src="https://unpkg.com/react@18/umd/react.development.js"
+              crossorigin
+            ></script>
+            <script
+              src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+              crossorigin
+            ></script>
+    
+            <!-- Load our React component. -->
+            <script src="portfolio.js"></script>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="quoteContainer">
-      <div id="quote"></div>
-      <div id="author"></div>
-    </div>
-
-
-    <!--Section Contact--------------------------------------------------------------------->
-
-    <section id="contact">
-      <h1>Contact</h1>
-      <input type="text" id="name" placeholder="Name" />
-      <input type="text" id="email" placeholder="E-Mail" />
-      <input type="text" id="betreff" placeholder="Betreff" />
-      <textarea id="message" placeholder="Nachricht"></textarea>
-      <div class="Anfrage">
-        <!-- We will put our React component inside this div. -->
-        <div id="like_button_container"></div>
-
-        <!-- Load React. -->
-        <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-        <script
-          src="https://unpkg.com/react@18/umd/react.development.js"
-          crossorigin
-        ></script>
-        <script
-          src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-          crossorigin
-        ></script>
-
-        <!-- Load our React component. -->
-        <script src="portfolio.js"></script>
-      </div>
-    </section>
 
   </main>
 
@@ -442,7 +424,7 @@
     var timelinelinks = document.getElementsByClassName("timeline-links");
     var timelinecontents = document.getElementsByClassName("timeline");
 
-    function opentab(tabname) {
+    function opentimeline(tabname) {
       for (timelinelink of timelinelinks) {
         timelinelink.classList.remove("active-link");
       }

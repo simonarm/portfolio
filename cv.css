@@ -55,6 +55,10 @@
   width: 100%;
 }
 
+.timeline ul {
+  padding-left: 2em;
+}
+
 .timeline ul li {
   list-style: disc;
   margin: 10px 0;
@@ -172,7 +176,7 @@ body,
   margin-top: 15px;
   padding: 50px;
   width: 100%;
-  border: 1px solid grey;
+  border: 3px solid #0ddff29d;
   border-radius: 20px;
   color: white;
   background-color: black;
