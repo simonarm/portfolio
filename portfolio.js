@@ -1,3 +1,5 @@
+//Code from reactjs.org
+
 "use strict";
 
 const e = React.createElement;
@@ -10,13 +12,13 @@ class LikeButton extends React.Component {
 
   render() {
     if (this.state.liked) {
-      return "Anfrage wurde gesendet.";
+      return "CV wurde heruntergeladen";
     }
 
     return e(
       "button",
       { onClick: () => this.setState({ liked: true }) },
-      "Anfrage senden"
+      "Download CV"
     );
   }
 }
@@ -40,6 +42,9 @@ function fadeOutPreloader(t, e) {
           (t.style.filter = "alpha(opacity = " + 100 * opacity + ")"));
     }, e));
 }
+
+//Code from https://longpdo.github.io/ for Textrotate
+
 setTimeout(function () {
   fadeOutPreloader(document.getElementById("preloader"), 69);
 }, 1500),

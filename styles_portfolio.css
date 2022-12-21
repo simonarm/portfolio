@@ -172,3 +172,10 @@ nav ul li a:hover::after {
   opacity: 1;
   background-color: #0ddff2d4;
 }
+
+#leer {
+  height: 5em;
+  background: url("assets/space.jpg") fixed;
+  background-size: cover;
+  background-position: center;
+}

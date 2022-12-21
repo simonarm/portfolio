@@ -1,3 +1,5 @@
+//Code from rapidapi https://rapidapi.com/products/teams/
+
 fetch("https://quotes15.p.rapidapi.com/quotes/random/", {
   method: "GET",
   headers: {

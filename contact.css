@@ -1,5 +1,6 @@
 #contact {
   color: white;
+  padding: 50px 40px;
 }
 
 .contl {
@@ -66,5 +67,14 @@ form.btn2 {
   padding: 14px 60px;
   font-size: 18px;
   margin-top: 20px;
+  cursor: pointer;
+}
+
+button {
+  background-color: #0ddff200;
+  font-family: sans-serif;
+  font-size: 18px;
+  color: white;
+  border: none;
   cursor: pointer;
 }

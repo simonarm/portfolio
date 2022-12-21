@@ -1,89 +1,5 @@
-/*
 #profile {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  z-index: 2;
-}
-
-#profile::before {
-  content: "";
-  z-index: -1;
-  transform: scaleY(1.4);
-  background: var(--color-background-gradient);
-  filter: blur(20px);
-  opacity: 1;
-  transition: opacity 0.3s;
-  position: absolute;
-  top: -1em;
-  right: -5em;
-  left: -5em;
-  bottom: 90%;
-}
-
-.list {
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-  min-width: 70vw;
-}
-
-.icon-container li {
-  display: flex;
-  gap: 10px;
-  place-items: center;
-  justify-content: flex-start;
-}
-
-.icon-container {
-  padding: 0 1em;
-}
-
-.icon-container li img {
-  width: 32px;
-  margin-bottom: 10px;
-}
-
-ul {
-  list-style: none;
-}
-
-.languages li {
-  margin-bottom: 15px;
-}
-
-#profilbild {
-  max-width: 10vw;
-}
-
-.progress-bar {
-  align-self: flex-end;
-  position: relative;
-  height: 0.7em;
-  width: 10em;
-}
-
-.progress-bar-fill {
-  position: relative;
-  height: 100%;
-  width: 0;
-  background-color: white;
-}
-
-.progress-bar::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  mix-blend-mode: color-burn;
-  background-color: #fff3e2;
-}
-*/
-
-#profile {
-  padding: 100px 40px;
+  padding: 50px 40px;
   color: #ababab;
   background-color: black;
 }
@@ -106,6 +22,10 @@ ul {
 .about-col-2 {
   flex-basis: 60%;
   padding-right: 15px;
+}
+
+.einleitung {
+  padding-top: 15px;
 }
 
 .sub-title {
