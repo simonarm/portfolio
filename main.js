@@ -1,10 +1,11 @@
 //Code from rapidapi https://rapidapi.com/products/teams/
+import { MY_API_KEY } from "./config.js";
 
-fetch("https://quotes15.p.rapidapi.com/quotes/random/", {
+fetch("https://quotes15.p.rapidapi.com/quotes/random/?language_code=en", {
   method: "GET",
   headers: {
     "x-rapidapi-host": "quotes15.p.rapidapi.com",
-    "x-rapidapi-key": "33f241f2bemsha3c4d820d0910bdp1afd9cjsn4e7b7ec432fa",
+    "x-rapidapi-key": MY_API_KEY,
   },
 })
   .then((response) => response.json())
